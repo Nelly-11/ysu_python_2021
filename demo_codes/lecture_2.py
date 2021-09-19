@@ -1,7 +1,22 @@
 """
-# This module is a demo code for lecture code
-"""
+This module is a demo code for lecture 2
 
+At this lecture we cover
+    - python syntax details
+    - types of tokens
+    - numerics
+    - booleans
+    - strings
+    - simple operators
+
+Materials
+    - Python Programming: An Introduction to Computer Science - Chapter 1,2,3
+
+    also:
+    - lexical analysis: http://www.mit.edu/people/amliu/vrut/python/ref/ref-4.html
+    - boolean and numeric types, operators - https://docs.python.org/3/library/stdtypes.html
+
+"""
 
 #####################################
 #           Identifiers, Operators
@@ -103,32 +118,4 @@
 # Though python supports bitwise operator for integers
 # First an integer is translated to the binary form
 # Then and operators(like AND, NOT, etc) are applied
-# this topis is OPTIONAL and we are not going to cover
-
-############################################################################################
-#################		      container-like data types 				 ###################
-# mutable and immutable objects
-
-# sequence types: list, tuple
-
-# a = [1,2,3,4]
-# print(a[0])
-# a.append(5)
-# print(a)
-# b = (1,2,3,4)
-
-# text or string sequence types: string
-# name = "Max"
-
-# set types: set, frozenset
-
-# set1 =  set([12,2,3,4,5,3])
-# print(set1)
-
-# mapping types:  dict
-# names = {"max": 4, "bob": 3, "max":5}
-# print(names)
-
-
-
-
+# this topic is OPTIONAL and we are not going to cover
