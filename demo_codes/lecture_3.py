@@ -75,59 +75,59 @@ Materials
 
 # sequences: list, tuple, string
 
-ranks = ("2","3","4","5","6","7","8","9","10","jack", "queen", "king", "ace")
-
-suits = (
-    "spades",
-    "hearts",
-    "diamonds",
-    "spades"
-)
-
-# sequence operations
-
-print("K" in ranks)
-print("ace" not in ranks)
-print([1,2,3] + [4,5,6])
-print([1,2,3] * 3)
-
-# member accessing, slicing
-print(ranks[0])
-print(ranks[-1])
-print(ranks[0:2])
-print(ranks[2:])
-print(ranks[0::2])
-print(ranks[::-1])
-
-# difference of mutable and immutable sequences - HASHING
-# https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1200px-Hash_table_3_1_1_0_1_0_0_SP.svg.png
-
-# list operations
-
-list_example = [1,2,3]
-
-# mutator method
-list_example.append("a")
-list_example.append({1,2,3})
-list_example.extend({1,2,3})
-print(list_example)
-
-
-# sets
-
-set_example = {
-    "banana",
-    "apple",
-    "orange"
-}
-
-set_example.add("pineapple")
-
-# mapping: dictionaries
-
-
-values = {
-    "king": (10,10),
-    "ace": (1,11)
-    "1": (1,1)
-}
+# ranks = ("2","3","4","5","6","7","8","9","10","jack", "queen", "king", "ace")
+#
+# suits = (
+#     "spades",
+#     "hearts",
+#     "diamonds",
+#     "spades"
+# )
+#
+# # sequence operations
+#
+# print("K" in ranks)
+# print("ace" not in ranks)
+# print([1,2,3] + [4,5,6])
+# print([1,2,3] * 3)
+#
+# # member accessing, slicing
+# print(ranks[0])
+# print(ranks[-1])
+# print(ranks[0:2])
+# print(ranks[2:])
+# print(ranks[0::2])
+# print(ranks[::-1])
+#
+# # difference of mutable and immutable sequences - HASHING
+# # https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1200px-Hash_table_3_1_1_0_1_0_0_SP.svg.png
+#
+# # list operations
+#
+# list_example = [1,2,3]
+#
+# # mutator method
+# list_example.append("a")
+# list_example.append({1,2,3})
+# list_example.extend({1,2,3})
+# print(list_example)
+#
+#
+# # sets
+#
+# set_example = {
+#     "banana",
+#     "apple",
+#     "orange"
+# }
+#
+# set_example.add("pineapple")
+#
+# # mapping: dictionaries
+#
+#
+# values = {
+#     "king": (10,10),
+#     "ace": (1,11)
+#     "1": (1,1)
+# }
