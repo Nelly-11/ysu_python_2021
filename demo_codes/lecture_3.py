@@ -37,9 +37,9 @@ Materials
 """
 
 ###########################################
-# 1. overview of methods and and attributes
+# 1. overview of methods and attributes
 ###########################################
-#
+
 # # example of an integer
 # new_integer = 1
 # print("Our integer is ", new_integer)
@@ -57,17 +57,17 @@ Materials
 # print(f"The size of our integer object is {real_of_new_int} bytes")
 #
 # # dir and doc functions
+# # dir (or __dir__() method) function returns a list of all methods and attributes of the class instance
+# # __doc__ attribute is a multiline string describing the class
 #
 # int_met_att = dir(new_integer)
 # print(int_met_att)
 #
 # print(new_integer.__add__(100))
-# print(new_integer.__add__("A"))  # raises error
+# print(new_integer.__add__("A"))  # print error
 # print(new_integer.__eq__(1))
 #
 # print(new_integer.__doc__)
-#
-# accessor vs mutator methods
 
 ###############################
 #  2. Container-like data types
@@ -75,7 +75,7 @@ Materials
 
 # sequences: list, tuple, string
 
-# ranks = ("2","3","4","5","6","7","8","9","10","jack", "queen", "king", "ace")
+# ranks = ("2","3","4","5","6","7","8","9","10","jack", "queen", "king", "ace",)
 #
 # suits = (
 #     "spades",
@@ -88,18 +88,20 @@ Materials
 #
 # print("K" in ranks)
 # print("ace" not in ranks)
-# print([1,2,3] + [4,5,6])
+# print([1,2,3] + [[4],5,6])
 # print([1,2,3] * 3)
 #
-# # member accessing, slicing
+# # # member accessing, slicing
+# print(ranks)
 # print(ranks[0])
 # print(ranks[-1])
 # print(ranks[0:2])
 # print(ranks[2:])
-# print(ranks[0::2])
+# print(ranks[::2])
 # print(ranks[::-1])
-#
+# #
 # # difference of mutable and immutable sequences - HASHING
+# # accessor vs mutator methods
 # # https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1200px-Hash_table_3_1_1_0_1_0_0_SP.svg.png
 #
 # # list operations
@@ -108,26 +110,56 @@ Materials
 #
 # # mutator method
 # list_example.append("a")
-# list_example.append({1,2,3})
-# list_example.extend({1,2,3})
+# list_example.append((1,2,3))
+# list_example.extend((1,2,3))
 # print(list_example)
 #
 #
 # # sets
-#
 # set_example = {
 #     "banana",
 #     "apple",
 #     "orange"
 # }
-#
+# #
 # set_example.add("pineapple")
 #
 # # mapping: dictionaries
 #
-#
-# values = {
+# bl_values = {
 #     "king": (10,10),
 #     "ace": (1,11)
 #     "1": (1,1)
 # }
+#
+# bl_values['king']
+
+####################
+# # 3. Control-flows
+####################
+# a = 0
+# if a == 1:
+#     print("odd")
+# elif a == 2:
+#     print("odd")
+# else:
+#     pass
+#
+# for i in [1, 2, 3, 4, 5]:
+#     if i == 2:
+#         continue
+#     print(i)
+#     if i == 4:
+#         break
+# else:
+#     print("_______________")
+#
+###############################
+# 4. math and random modules
+###############################
+# python module - .py
+#
+# from math import e, sqrt
+#
+# print(e)
+# print(sqrt(5))
