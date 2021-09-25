@@ -1,3 +1,22 @@
+"""
+This module is a demo code for lecture 2
+
+At this lecture we cover
+    - python syntax details
+    - types of tokens
+    - numerics
+    - booleans
+    - strings
+    - simple operators
+
+Materials
+    - Python Programming: An Introduction to Computer Science - Chapter 1,2,3
+
+    also:
+    - lexical analysis: http://www.mit.edu/people/amliu/vrut/python/ref/ref-4.html
+    - boolean and numeric types, operators - https://docs.python.org/3/library/stdtypes.html
+
+"""
 
 
 #####################################
