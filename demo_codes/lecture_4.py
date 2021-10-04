@@ -8,13 +8,13 @@ At this lecture we cover
 Materials
     - https://docs.python.org/3/tutorial/controlflow.html#defining-functions
     - https://i.redd.it/8341g68g1v7y.png
+    - Michael T. Goodrich, Data Structures and Algorithms in Python - Chapter 1.5
+    - git intro: https://www.youtube.com/watch?v=RGOj5yH7evk
 
     also:
-    -
+    - some git topics: https://www.youtube.com/watch?v=Uszj_k0DGsg
 
 """
-
-
 #############
 #  FUNCTIONS
 #############
@@ -167,18 +167,6 @@ Materials
 ####################################
 
 # local, non-local, global
-
-
-# lambda functions
-# a = lambda x: x**2
-# print(a(4))
-
-# map, filter, reduce, lambda
-# list, dict comprehensions
-
-
-# local nonlocal global
-# documentation example
 
 # def scope_test():
 
