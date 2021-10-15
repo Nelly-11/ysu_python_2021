@@ -29,6 +29,7 @@ Materials
     - meta-classes: https://realpython.com/python-metaclasses/
     - ABC: https://docs.python.org/3/library/abc.html (not to be mixed with collections.abc)
     - UML cheat sheet: https://khalilstemmler.com/files/resources/umlcheatsheet.jpg
+    - name mangling: https://stackoverflow.com/questions/1301346/what-is-the-meaning-of-single-and-double-underscore-before-an-object-name
 """
 
 
@@ -116,6 +117,7 @@ Materials
 # del a_user.profile_pic
 # # print(a_user.profile_pic) # will raise error, field is deleted
 
+# Note differences between __var__ _var and __var
 #################################################################
 # 3. Inheritance
 # Inheritance is the ability to build new classes on top of existing ones
