@@ -12,6 +12,8 @@ Materials
     -
 
 """
+
+
 #
 # # 1. so far you have been working with objects with are type of some class
 # a = 1
@@ -211,51 +213,3 @@ Materials
 #         if isinstance(x, str):
 #             return x.capitalize()
 #
-#
-# # 10. special methods
-# # iterators - __iter__(), __next__()
-#
-# class Reverse:
-#     """Iterator for looping over a sequence backwards."""
-#
-#     def __init__(self, data):
-#         self.data = data
-#         self.index = len(data)
-#
-#
-# def __iter__(self):
-#     return self
-#
-#
-# def __next__(self):
-#     if self.index == 0:
-#         raise StopIteration
-#     self.index = self.index - 1
-#     return self.data[self.index]
-#
-#
-# rev = Reverse('spam')
-# for char in rev:
-#     print(char)
-#
-#
-# # generators - yield statement
-# def reverse(data):
-#     for index in range(len(data) - 1, -1, -1):
-#         yield data[index]
-#
-#
-# reverse('abc')
-# print(reverse('abc'))
-#
-# a = reverse('abc')
-# print(a.__next__())
-# print(a.__next__())
-# print(a.__next__())
-# print(a.__next__())
-#
-# a = reverse('abc')
-# for elem in a:
-#     print(elem)
-#
-# # 11. other special methods
