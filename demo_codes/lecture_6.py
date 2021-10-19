@@ -22,7 +22,9 @@ At this lecture we cover
     - metaclasses
 
 Materials
-
+    - Michael T. Goodrich, Data Structures and Algorithms in Python - Chapter 2
+    - Python Programming: An Introduction to Computer Science - Chapter 10.1-5
+    - Dusty Phillips, Python 3 Object-oriented Programming
 
     also:
     - MRO: https://www.geeksforgeeks.org/multiple-inheritance-in-python/

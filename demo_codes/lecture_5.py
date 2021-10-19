@@ -6,10 +6,7 @@ At this lecture we cover
     - OOP principles
 
 Materials
-    -
-
-    also:
-    -
+    - see lecture_6.py
 
 """
 
