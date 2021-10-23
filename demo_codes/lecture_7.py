@@ -5,22 +5,15 @@ At this lecture we cover
     - iterators, generators
     - open(), with and context managers
     - UML diagrams
-    - modules, packages
-    - create a package
-    - project
-    - pip
-    - requirements.txt
-    - standard libraries
-    - Exceptions
-        - raising
-        - handling
-        - creating
+    - OOP recap
 
 Materials
-    -
+    - Dusty Phillips, Python 3 Object-oriented Programming - Chapter 9
+    - Michael T. Goodrich, Data Structures and Algorithms in Python - Chapter 1.6, 1.8
 
     also:
-    -
+    - https://realpython.com/python-with-statement/
+    - https://www.youtube.com/watch?v=Lv1treHIckI&list=PLzMcBGfZo4-kwmIcMDdXSuy_wSqtU-xDP&index=6
 
 """
 
@@ -32,6 +25,15 @@ Materials
 # # next should return the next element
 # # https://github.com/python/cpython/blob/3.10/Lib/_collections_abc.py
 #
+
+# a = range(10000000000)
+# print(a[10])
+# # print(a.__sizeof__())
+# #
+# b = [i for i in range(1,10)]
+# print(b)
+
+# print(b.__sizeof__())
 # class Reverse:
 #     """Iterator for looping over a sequence backwards."""
 #
@@ -50,21 +52,41 @@ Materials
 #
 #
 # rev = Reverse('spam')
-# for char in rev:
-#     print(char)
+# print(rev.__next__())
+# print(rev.__next__())
+# print(rev.__next__())
+# print(rev.__next__())
+# print(rev.__next__())
+# # for char in rev:
+# #     print(char)
+
 #
-#
-# # generators - yield statement
+# generators - yield statement
 # def reverse(data):
 #     for index in range(len(data) - 1, -1, -1):
 #         yield data[index]
 #
+# a = reverse("spam")
+# print(a)
+#
+# print(next(a))
+# print(next(a))
 #
 # # generator comprehension
+# [i**2 for i in [1,2,3]]
 # gen = (elem for elem in range(10) if elem % 3 == 0)
 # print(gen)
 # print(elem for elem in gen)
 #
+# a = (13,14,15)
+# n = ("a","b","c", "a")
+# g = ("a","b","b",1 , 2)
+#
+# z = zip(a,n,g)
+# print(z)
+# for elem in z:
+#     print(elem)
+
 # # range()
 # # zip()
 #
@@ -81,7 +103,7 @@ Materials
 # a = reverse('abc')
 # for elem in a:
 #     print(elem)
-
+# zip
 ###################################
 # # # context managers
 # # __enter__ and __exit__ methods
@@ -112,50 +134,8 @@ Materials
 # with open(path, "a") as file:
 #     for num in range(5):
 #         file.write("a line is added\n")
-#
+
 # # write with the context manager
 # with open("../data/a_new_random_file.txt", "w") as file:
 #     for num in range(5):
 #         file.write("a line is added\n")
-
-# # ################################################
-# # modules
-# from a_module import another_function
-# from homework.answer.lecture3 import another_function_2
-# from lecture_6 import foo, NewClass
-#
-# foo()
-# a = NewClass()
-#
-# from lecture_6 import *
-#
-# a = AnotherClass()
-# print(a.sqrt1p(9))
-#
-# # absolute and relative paths
-# another_function()
-# another_function_2()
-
-# # packages
-
-# from lecture6.module_ import Mod11
-#
-# a = Mod11()
-#
-# from lecture6.module_2 import Mod22
-#
-# a = Mod22()
-#
-# from lecture6 import *
-#
-# a = Mod12
-#
-# # ## __name__ == "__main__"
-#
-# print(__name__)
-# foo12()
-# foo22()
-
-# built-in modules and packages
-# https://docs.python.org/3.8/library/index.html
-
