@@ -12,11 +12,8 @@ At this lecture we cover
     - exec vs eval
     - instructions vs expressions
     - eager vs lazy evaluation
-    - iterators, generators
-    - open(), with and context managers
     - more special methods
     - object class (builtins.py)
-    - UML diagrams
 
     - abstract base classes
     - metaclasses
@@ -199,97 +196,18 @@ Materials
 # print(F4_2.__mro__)
 # inst_F4_2.m()
 #
+from math import sqrt
 
-##################################################
+def foo():
+    print(1)
 
-#
-# # # iterators - __iter__(), __next__()
-# # iter should return the object
-# # next should return the next element
-# # https://github.com/python/cpython/blob/3.10/Lib/_collections_abc.py
-#
-# class Reverse:
-#     """Iterator for looping over a sequence backwards."""
-#
-#     def __init__(self, data):
-#         self.data = data
-#         self.index = len(data)
-#
-#     def __iter__(self):
-#         return self
-#
-#     def __next__(self):
-#         if self.index == 0:
-#             raise StopIteration
-#         self.index = self.index - 1
-#         return self.data[self.index]
-#
-#
-# rev = Reverse('spam')
-# for char in rev:
-#     print(char)
-#
-#
-# # generators - yield statement
-# def reverse(data):
-#     for index in range(len(data) - 1, -1, -1):
-#         yield data[index]
-#
-#
-# # generator comprehension
-# gen = (elem for elem in range(10) if elem % 3 == 0)
-# print(gen)
-# print(elem for elem in gen)
-#
-# # range()
-# # zip()
-#
-#
-# reverse('abc')
-# print(reverse('abc'))
-#
-# a = reverse('abc')
-# print(a.__next__())
-# print(a.__next__())
-# print(a.__next__())
-# # print(a.__next__()) # will raise StopIteration exception
-#
-# a = reverse('abc')
-# for elem in a:
-#     print(elem)
 
-###################################
-# # # context managers
-# # __enter__ and __exit__ methods
-# # python i/o
-#
-# print(open.__doc__)
-# path = "../data/zen_of_python.txt"
-#
-# # read entire file
-# file = open(path, "r")
-# print(file)
-# print(file.__dir__())
-# text = file.read()
-# print(text)
-#
-# # read line by line
-# file = open(path, "r")
-# print(file)
-# for line in file:
-#     print(line, end="")
-#
-# # open as context manager
-# with open(path, "r") as file:
-#     for line in file:
-#         print(line, end="")
-#
-# # append with the context manager
-# with open(path, "a") as file:
-#     for num in range(5):
-#         file.write("a line is added\n")
-#
-# # write with the context manager
-# with open("../data/a_new_random_file.txt", "w") as file:
-#     for num in range(5):
-#         file.write("a line is added\n")
+class NewClass:
+    pass
+
+
+class AnotherClass:
+
+    @staticmethod
+    def sqrt1p(n):
+        return sqrt(n) + 1

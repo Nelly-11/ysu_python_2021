@@ -87,3 +87,7 @@ for rank in ranks:
 
 print(hand_values)
 ###################
+
+
+def another_function_2():
+    print("another_function_2")
