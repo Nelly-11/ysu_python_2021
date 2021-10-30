@@ -139,3 +139,46 @@ Materials
 # with open("../data/a_new_random_file.txt", "w") as file:
 #     for num in range(5):
 #         file.write("a line is added\n")
+#
+# from abc import ABC, abstractmethod
+#
+#
+# class NameABC(ABC):
+#
+#     @abstractmethod
+#     def print_name(self):
+#         pass
+#
+#
+# class Name(NameABC):
+#
+#     pass
+#
+#
+# class NameChild(Name):
+#
+#     pass
+#
+#
+#
+#
+#
+# def main():
+#     def looping():
+#         deck = Deck()
+#         game = Game(deck)
+#         for user in game.users:
+#             game.ask_user(user=user)
+#         game.show_status()
+#         game.ask_dealer()
+#         if game.start_again():
+#             looping()
+#     looping()
+#     print("Thanks. Bye!")
+#
+#
+#
+#
+#
+#
+#

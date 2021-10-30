@@ -201,7 +201,6 @@ from math import sqrt
 def foo():
     print(1)
 
-
 class NewClass:
     pass
 

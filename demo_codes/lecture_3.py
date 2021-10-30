@@ -35,7 +35,9 @@ Materials
     - https://i.stack.imgur.com/GemQf.png 
 
 """
+from typing import Sized, Hashable
 
+object
 ###########################################
 # 1. overview of methods and attributes
 ###########################################
